@@ -1,6 +1,43 @@
-# Logging
+# Logging Recipe
 
-See end of this page for complete recipe.
+## Basic Modules
+
+It is sometimes necessary to use Python logging module in a scientific computing context. The advantage of `logging` compared to `print` function is obvious.
+
+We sometimes want more customized logging settings, however, there is seldom any working snippets on the internet, while the [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html) only covers some advanced cases.
+
+Here, the recipe has the following configs:
+- customized output
+- controlled output console/file and level
+- filter for certain conditions
+
+### logging - Python logging module
+
+In the simplist setting, we want to use Python's logging module like this.
+
+```python
+import logging
+
+# config (can be omitted)
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
+
+# use
+logging.debug()
+logging.info()
+logging.warning()
+logging.error()
+logging.critical()
+```
+
+### dictConfig - Configuration dictionary schema
+
+### handler - Control output
+
+### loggers - Register logger
+
+### formatters - Message format
+
+### filters - Filter instance
 
 ## Full Recipe
 
@@ -87,3 +124,15 @@ def configure_logger(name, log_path):
     })
     return logging.getLogger(name)
 ```
+
+
+## References
+- Python 3.6.5rc1 documentation
+    - [Logging HOWTO](https://docs.python.org/3/howto/logging.html)
+    - [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)
+    - [16.6. logging — Logging facility for Python](https://docs.python.org/3/library/logging.html)
+    - [16.7. logging.config — Logging configuration](https://docs.python.org/3/library/logging.config.html)
+- Stack Overflow
+    - [python: complete example of dict for logging.config.dictConfig?](https://stackoverflow.com/questions/7507825/python-complete-example-of-dict-for-logging-config-dictconfig)
+    - [What is a correct way to filter different loggers using python logging?](https://stackoverflow.com/questions/17275334/what-is-a-correct-way-to-filter-different-loggers-using-python-logging)
+    - [logging - How do I add custom field to Python log format string?](https://stackoverflow.com/questions/17558552/how-do-i-add-custom-field-to-python-log-format-string)
