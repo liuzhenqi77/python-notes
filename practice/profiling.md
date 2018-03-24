@@ -11,7 +11,6 @@ pip install line_profiler
 ```
 The command will be included in the `PATH`.
 
-
 ```bash
 kernprof -l -v script_to_profile.py
 ```

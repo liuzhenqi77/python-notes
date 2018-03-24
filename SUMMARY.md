@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## Elements
+## Environment
 
 * [Installation](elements/installation.md)
 * [Configuration](elements/configuration.md)
@@ -11,6 +11,7 @@
 
 ## Practice
 
-* [Logging Recipe](practice/logging-recipe.md)
+* [Logging](practice/logging-recipe.md)
 * [Profiling](practice/profiling.md)
-
+* [Decorator](practice/decorator-by-timeit.md)
+* [DL misc](practice/deep-learning-misc.md)

@@ -8,5 +8,21 @@
 
 ## 代码模板
 
-## 插件
+```python
+""" Short description here
 
+Longer description here
+
+Project:    ${PROJECT_NAME}
+File Name:  ${NAME}
+Author:     Zhenqi Liu
+Date Created:   ${DATE}
+Last Modified:  ${DATE}
+Code Status:    WIP/FINAL/BROKEN
+"""
+
+if __name__ == '__main__':
+    pass
+```
+
+## 插件
