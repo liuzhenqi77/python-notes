@@ -1,12 +1,12 @@
-# 配置
+# Configuration
 
-## 一般配置
+## Setups
 
-## 包管理器
+## Package Manager
 
-pip
+Use `pip`
 
-## 集成开发环境（IDE）
+## Integrated Development Environment（IDE）
 
-推荐使用 [Jetbrains](https://www.jetbrains.com/) 的[PyCharm](https://www.jetbrains.com/pycharm/) 
+Recommend to use [PyCharm](https://www.jetbrains.com/pycharm/) from [Jetbrains](https://www.jetbrains.com/), you may use the [JetBrains Toolbox](https://www.jetbrains.com/toolbox/) to install and manage the IDE.
 

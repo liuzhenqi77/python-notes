@@ -7,6 +7,7 @@ It is sometimes necessary to use Python logging module in a scientific computing
 We sometimes want more customized logging settings, however, there is seldom any working snippets on the internet, while the [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html) only covers some advanced cases.
 
 Here, the recipe has the following configs:
+
 - customized output
 - controlled output console/file and level
 - filter for certain conditions
@@ -52,7 +53,8 @@ logger.warning()
 logger.error()
 logger.critical()
 ```
-### Utility Code
+
+### Utility code
 
 ```python
 class word_filter(logging.Filter):
@@ -125,14 +127,25 @@ def configure_logger(name, log_path):
     return logging.getLogger(name)
 ```
 
+## How to Monitor Log on Ubuntu
+
+In vim, use `:e!` to reload.
+
+Use `tail -f FILE_NAME`
+
+Use `less +F FILE_NAME`
 
 ## References
+
 - Python 3.6.5rc1 documentation
-    - [Logging HOWTO](https://docs.python.org/3/howto/logging.html)
-    - [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)
-    - [16.6. logging — Logging facility for Python](https://docs.python.org/3/library/logging.html)
-    - [16.7. logging.config — Logging configuration](https://docs.python.org/3/library/logging.config.html)
+  - [Logging HOWTO](https://docs.python.org/3/howto/logging.html)
+  - [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)
+  - [16.6. logging — Logging facility for Python](https://docs.python.org/3/library/logging.html)
+  - [16.7. logging.config — Logging configuration](https://docs.python.org/3/library/logging.config.html)
 - Stack Overflow
-    - [python: complete example of dict for logging.config.dictConfig?](https://stackoverflow.com/questions/7507825/python-complete-example-of-dict-for-logging-config-dictconfig)
-    - [What is a correct way to filter different loggers using python logging?](https://stackoverflow.com/questions/17275334/what-is-a-correct-way-to-filter-different-loggers-using-python-logging)
-    - [logging - How do I add custom field to Python log format string?](https://stackoverflow.com/questions/17558552/how-do-i-add-custom-field-to-python-log-format-string)
+  - [python: complete example of dict for logging.config.dictConfig?](https://stackoverflow.com/questions/7507825/python-complete-example-of-dict-for-logging-config-dictconfig)
+  - [What is a correct way to filter different loggers using python logging?](https://stackoverflow.com/questions/17275334/what-is-a-correct-way-to-filter-different-loggers-using-python-logging)
+  - [logging - How do I add custom field to Python log format string?](https://stackoverflow.com/questions/17558552/how-do-i-add-custom-field-to-python-log-format-string)
+- Tail/Less
+ - [Stop using tail -f (mostly)](https://www.brianstorti.com/stop-using-tail/)
+ - [View a log file in Linux dynamically](https://stackoverflow.com/questions/2099149/view-a-log-file-in-linux-dynamically)

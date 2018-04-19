@@ -1,17 +1,17 @@
 # 安装
 
-## 正常安装
+## Official Installation
 
-1. 官网下载
-2. 安装时点选“ADD Python to PATH”
+Select `"ADD Python to PATH"` on setup.
 
-## Anaconda 安装（推荐）
+## Anaconda Installation（Recommended）
+
+We use Anaconda for one-stop solution of virtual environment and package management.
+
+It will replace your system's default Python installation by taking a earlier position in `PATH`. It's a good thing that you do not have to worry about existing versions.
 
 ## 多版本共存解决方案
 
 ### 正常安装
 
 ### virtualenv
-
-
-

@@ -15,3 +15,4 @@
 * [Profiling](practice/profiling.md)
 * [Decorator](practice/decorator-by-timeit.md)
 * [DL misc](practice/deep-learning-misc.md)
+* [Packages](practice/favorite-packages.md)
